@@ -1,6 +1,6 @@
 # Java Kamp 2022
 
-### 1. Hafta 1-23 arasındaki tüm videolar izlenip uygulandı.
+### 1. Hafta 1-23 aras,ndaki tüm videolar izlenip uyguland,.
 * javaHelloWorld -> 5. video
 * variables -> 6. video
 * datatypes -> 7. video
@@ -17,7 +17,7 @@
 * mukemmelSayi -> 21. video
 * arkadasSayilar -> 22. video
 * sayiBulma -> 23. video
-### 2. Hafta 24-37 arasındaki tüm videolar izlenip uygulandı.
+### 2. Hafta 24-37 arasındaki tüm videolar izlenip uygulandi.
 * methods -> 24. video
 * methods2 -> 25, 26. video
 * classes -> 27, 28, 29. video
@@ -26,3 +26,5 @@
 * methodOverloading -> 35. video
 * inheritance -> 36. video
 * inheritanceDemo -> 37. video
+### 3. Hafta Odevleri
+* Odev1 -> youtubeEgitim -> https://www.youtube.com/watch?v=H3QOQRh8cgk&list=PLqG356ExoxZWfcrBP53Njxir4a-OgqRki&index=2 video bastan sona izlenip Java'ya gore uygulandi.
