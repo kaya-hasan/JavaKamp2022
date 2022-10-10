@@ -28,3 +28,11 @@
 * inheritanceDemo -> 37. video
 ### 3. Hafta Odevleri
 * Odev1 -> youtubeEgitim -> https://www.youtube.com/watch?v=H3QOQRh8cgk&list=PLqG356ExoxZWfcrBP53Njxir4a-OgqRki&index=2 video bastan sona izlenip Java'ya gore uygulandi.
+* Odev2 -> https://www.youtube.com/watch?v=uucRtKBo6Yg&list=PLqG356ExoxZUGwbqoJEKSMnaxVJe4Uvf8 oynatma listesindeki videolar bitirildi. (38-45)
+  * polymorphismDemo -> 38. video
+  * overriding -> 39. video
+  * abstractClasses -> 40. video
+  * abstractDemo -> 41. video
+  * interfaces -> 42, 43. video
+  * interfaceDemo -> 44. video
+  * staticDemo -> 45. video
