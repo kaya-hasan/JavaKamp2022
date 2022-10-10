@@ -20,14 +20,14 @@
    * sayiBulma -> 23. video
 ### 2. Hafta Odevleri 
 * https://www.youtube.com/watch?v=a8Fe2qbnYDM&list=PLqG356ExoxZUGwbqoJEKSMnaxVJe4Uvf8&index=2 linkteki 24-37 arasındaki tüm videolar izlenip uygulandi.
- * methods -> 24. video
- * methods2 -> 25, 26. video
- * classes -> 27, 28, 29. video
- * reCapDemo_Classes -> 30. video
- * classesWithAttributes -> 31, 32, 33, 34. video
- * methodOverloading -> 35. video
- * inheritance -> 36. video
- * inheritanceDemo -> 37. video
+  * methods -> 24. video
+  * methods2 -> 25, 26. video
+  * classes -> 27, 28, 29. video
+  * reCapDemo_Classes -> 30. video
+  * classesWithAttributes -> 31, 32, 33, 34. video
+  * methodOverloading -> 35. video
+  * inheritance -> 36. video
+  * inheritanceDemo -> 37. video
 ### 3. Hafta Odevleri
 * Odev1 -> youtubeEgitim -> https://www.youtube.com/watch?v=H3QOQRh8cgk&list=PLqG356ExoxZWfcrBP53Njxir4a-OgqRki&index=2 video bastan sona izlenip Java'ya gore uygulandi.
 * Odev2 -> https://www.youtube.com/watch?v=uucRtKBo6Yg&list=PLqG356ExoxZUGwbqoJEKSMnaxVJe4Uvf8 oynatma listesindeki videolar bitirildi. (38-45)
