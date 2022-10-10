@@ -1,5 +1,4 @@
-## Odev Aciklamasi
-### kodlama.io web sitesinin ana sayfasında bulunan eğitmen, kategori ve kurs bölümlerini katmanlı mimaride kodlamak
+## kodlama.io web sitesinin ana sayfasında bulunan eğitmen, kategori ve kurs bölümlerini katmanlı mimaride kodlamak
   * Önceki derste yaptığımız tekniklerle hem jdbc hem de hibernate üzerinde yazmış gibi simüle ediniz.
   * Çoklu loglama yapısını simule ediniz.
   * Aşağıdaki isterleri gerçekleştiriniz.
