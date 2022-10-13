@@ -39,3 +39,4 @@
   * interfaceDemo -> 44. video
   * staticDemo -> 45. video
 * Odev3 -> kodlama.io web sitesinin ana sayfasında bulunan eğitmen, kategori ve kurs bölümlerini katmanlı mimaride kodlamak.
+* Odev5 -> sqlOdev adlı klasörde, [video](https://www.youtube.com/watch?v=r_pbdopB4LU&list=PLqG356ExoxZVN7rC0KmMo0lvECK97VRZg&index=6) izlenip uygulandı.
