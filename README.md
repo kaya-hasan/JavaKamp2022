@@ -38,3 +38,4 @@
   * interfaces -> 42, 43. video
   * interfaceDemo -> 44. video
   * staticDemo -> 45. video
+* Odev3 -> kodlama.io web sitesinin ana sayfasında bulunan eğitmen, kategori ve kurs bölümlerini katmanlı mimaride kodlamak.
