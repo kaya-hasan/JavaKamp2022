@@ -42,4 +42,6 @@
 * Odev5 -> sqlOdev adlı klasörde, [video](https://www.youtube.com/watch?v=r_pbdopB4LU&list=PLqG356ExoxZVN7rC0KmMo0lvECK97VRZg&index=6) izlenip uygulandı.
 * Odev6 -> sqlOdev adlı klasörde, [video](https://www.youtube.com/watch?v=4U54EVknm2Q&list=PLqG356ExoxZXZQt9edXkCS-_dunCq-bXm) izlenip uygulandı.
 ### 4. Hafta Odevi
-* Adayların kodlama becerilerini iş verenlerle buluşturduğumuz bir proje yazmak istiyoruz.
+* devs -> Adayların kodlama becerilerini iş verenlerle buluşturduğumuz bir proje yazmak istiyoruz.
+### 5. Hafta Odevi
+* devs -> Sisteme programlama dillerine ait alt teknolojiler eklenebilmeli, silinebilmeli. güncellenebilmeli, listelenebilmelidir.
