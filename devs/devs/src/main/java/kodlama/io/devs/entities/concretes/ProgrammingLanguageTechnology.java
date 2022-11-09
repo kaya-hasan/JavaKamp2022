@@ -1,7 +1,5 @@
 package kodlama.io.devs.entities.concretes;
 
-import java.util.List;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,7 +7,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -19,24 +18,24 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Table(name = "languages")
+@Table(name="technologies")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class ProgrammingLanguage {
-
+public class ProgrammingLanguageTechnology {
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY) // otomatik arttirma
-	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="id")
 	private int id;
-
-	@Column(name = "name")
+	
+	@Column(name="name")
 	private String name;
-
-	@JsonIgnore
-	@OneToMany(mappedBy = "programmingLanguage", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	private List<ProgrammingLanguageTechnology> technologies;
-
+	
+	@ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+    @JoinColumn(name="programming_language_id")
+    @JsonIgnore
+    private ProgrammingLanguage programmingLanguage;
 }
