@@ -1,91 +1,91 @@
 -- Select
--- ANSII -> kodun başka yerlerde de çalışması (oracle, postgresql, mysql)
+-- ANSII -> kodun baÅŸka yerlerde de Ã§alÄ±ÅŸmasÄ± (oracle, postgresql, mysql)
 
 use Northwind
-Select * from Customers -- Customers tablosundan bütün kolonları seç
+Select * from Customers -- Customers tablosundan bÃ¼tÃ¼n kolonlarÄ± seÃ§
 
-Select ContactName, CompanyName, City from Customers -- Customers tablosundan ContactName, CompanyName, City'deki kolonları seç
+Select ContactName, CompanyName, City from Customers -- Customers tablosundan ContactName, CompanyName, City'deki kolonlarÄ± seÃ§
 
 Select ContactName Adi, CompanyName SirketAdi, City Sehir from Customers
 
 -- filtreleme sorgusu
-Select * from Customers where City = 'London' -- Customers'tan Şehri Londra olanları seç
+Select * from Customers where City = 'London' -- Customers'tan ÅŸehri Londra olanlarÄ± seÃ§
 
-Select * from Customers where City = 'Berlin' -- Customers'tan Şehri Berlin olanları seç
+Select * from Customers where City = 'Berlin' -- Customers'tan ÅŸehri Berlin olanlarÄ± seÃ§
 
--- case insensitive -> büyük Küçük harf duyarsızdır.
-Select * from Products -- Products tablosunu tüm kolonlarıyla getir.
+-- case insensitive -> bÃ¼yÃ¼k KÃ¼Ã§Ã¼k harf duyarsÄ±zdÄ±r.
+Select * from Products -- Products tablosunu tÃ¼m kolonlarÄ±yla getir.
 
-Select * from Products where CategoryID = 1 -- Products tablosunda CategoryID'si 1 olan kolonları getir
+Select * from Products where CategoryID = 1 -- Products tablosunda CategoryID'si 1 olan kolonlarÄ± getir
 
-Select * from Products where CategoryID = 1 or CategoryID = 3 -- Products tablosunda CategoryID'si 1 olan ya da 3 olan kolonları getir
+Select * from Products where CategoryID = 1 or CategoryID = 3 -- Products tablosunda CategoryID'si 1 olan ya da 3 olan kolonlarÄ± getir
 
-Select * from Products where CategoryID = 1 and UnitPrice >= 10 -- Products tablosunda CategoryID'si 1 olan ve UnitPrice'i 10'dan büyük eşit olan kolonları getir.
+Select * from Products where CategoryID = 1 and UnitPrice >= 10 -- Products tablosunda CategoryID'si 1 olan ve UnitPrice'i 10'dan bÃ¼yÃ¼k eÅŸit olan kolonlarÄ± getir.
 
---order by -> sıralama
-Select * from Products order by ProductName -- Products tablosunu seç PrdocutName'ye göre sırala (order by = sırala)
+--order by -> sÄ±ralama
+Select * from Products order by ProductName -- Products tablosunu seÃ§ PrdocutName'ye gÃ¶re sÄ±rala (order by = sÄ±rala)
 
-Select * from Products order by CategoryID, ProductName -- Products tablosunu seç CategoryID'ye göre sıralarken ProductName'ye göre de sırala
+Select * from Products order by CategoryID, ProductName -- Products tablosunu seÃ§ CategoryID'ye gÃ¶re sÃ½ralarken ProductName'ye gÃ¶re de sÄ±rala
 
 -- asc -> ascending -> artan 
-Select * from Products order by UnitPrice asc -- Products tablosunu seç UnitPrice'ye göre sırala (en ucuzdan başlattı)
+Select * from Products order by UnitPrice asc -- Products tablosunu seÃ§ UnitPrice'ye gÃ¶re sÄ±rala (en ucuzdan baÅŸlattÄ±)
 
 -- desc -> descenging -> azalan
 Select * from Products order by UnitPrice desc
 
-Select * from Products where CategoryID = 1 order by UnitPrice desc -- Prdocust tablosunu seç CategoryID'si 1 olanları filtrele onları UnitPrice'a göre azalan olarak getir
+Select * from Products where CategoryID = 1 order by UnitPrice desc -- Prdocust tablosunu seÃ§ CategoryID'si 1 olanlarÄ± filtrele onlarÄ± UnitPrice'a gÃ¶re azalan olarak getir
 
-Select count(*) from Products -- Products tablosundan kaç data olduğunu gösterir
+Select count(*) from Products -- Products tablosundan kaÃ§ data olduÄŸunu gÃ¶sterir
 
-Select count(*) from Products where CategoryID = 2 -- Products tablosunda CategoryID'si 2 olanlardan kaç tane olduğnu gösterir
+Select count(*) from Products where CategoryID = 2 -- Products tablosunda CategoryID'si 2 olanlardan kaÃ§ tane olduÄŸnu gÃ¶sterir
 
 Select count(*) Adet from Products where CategoryID = 2
 
--- group by -> gruplar oluşturmak
--- count(*) her grup için ayrı ayrı hesaplama yapıyor
--- Hangi kategoride kaç farklı ürün var?
+-- group by -> gruplar oluÅŸturmak
+-- count(*) her grup iÃ§in ayrÄ± ayrÄ± hesaplama yapÄ±yor
+-- Hangi kategoride kaÃ§ farklÄ± Ã¼rÃ¼n var?
 Select CategoryID, count(*) from Products group by CategoryID
 
--- ürün sayısı 10'dan az olan kategorileri listele
--- having -> gorup by'a konu olan kümülatif(birikmiş) sorguya yazılır
+-- Ã¼rÃ¼n sayÄ±sÄ± 10'dan az olan kategorileri listele
+-- having -> gorup by'a konu olan kÃ¼mÃ¼latif(birikmiÅŸ) sorguya yazÄ±lÄ±r
 Select CategoryID, count(*) from Products group by CategoryID having count(*) < 10
 
--- Fiyatı 20 den fazla olan ürünleri CategoryID'ye göre grupla, CategoryID'de ürün sayısı 10dan az olanları getir
+-- FiyatÄ± 20 den fazla olan Ã¼rÃ¼nleri CategoryID'ye gÃ¶re grupla, CategoryID'de Ã¼rÃ¼n sayÄ±sÄ± 10dan az olanlarÄ± getir
 Select CategoryID, count(*) from Products where UnitPrice > 20 group by CategoryID having count(*) < 10
 
--- join -> birleştirmek
--- Products ile Categories'te bulunan CategoryID'leri birleştir (neye göre -> eşitliğe göre)
+-- join -> birleÅŸtirmek
+-- Products ile Categories'te bulunan CategoryID'leri birleÃ¾tir (neye gÃ¶re -> eÅŸitliÄŸe gÃ¶re)
 Select * 
 from Products inner join Categories on Products.CategoryID = Categories.CategoryID
 
 
--- Products tablosundan ProductID, ProductName, UnitPrice, Kategori tablosundan CategoryName'i ver CategoryID'leri birleştir
+-- Products tablosundan ProductID, ProductName, UnitPrice, Kategori tablosundan CategoryName'i ver CategoryID'leri birleÃ¾tir
 Select Products.ProductID, Products.ProductName, Products.UnitPrice, Categories.CategoryName from Products inner join Categories on Products.CategoryID = Categories.CategoryID
 
 -- DTO Data Transformation Object
 
 
--- Ürünlerden fiyatı 10'dan büyük olanlar için Categories.CategoryName ile birleştir 
+-- ÃœrÃ¼nlerden fiyatÄ± 10'dan bÃ¼yÃ¼k olanlar iÃ§in Categories.CategoryName ile birleÅŸtir 
 Select Products.ProductID, Products.ProductName, Products.UnitPrice, Categories.CategoryName from Products inner join Categories on Products.CategoryID = Categories.CategoryID where Products.UnitPrice > 10
 
--- inner join -> sadece 2 tabloda da eşleşenleri bir araya getirir. Eşleşmeyen data varsa onu getirmez. Sadece eşleşen kayıtları getirir.
+-- inner join -> sadece 2 tabloda da eÅŸleÅŸenleri bir araya getirir. EÅŸleÅŸmeyen data varsa onu getirmez. Sadece eÅŸleÅŸen kayÄ±tlarÄ± getirir.
 -- 2 tablodaki ortak kolon bulunur (p -> products, od -> order details)
 Select * from Products  p inner join [Order Details] od on p.ProductID = od.ProductID
 
--- left join -> solda olup sağda olmayanları da getir (ürünlerde olup sipariş detayında olmayan ürün)
+-- left join -> solda olup saÄŸda olmayanlarÄ± da getir (Ã¼rÃ¼nlerde olup sipariÅŸ detayÄ±nda olmayan Ã¼rÃ¼n)
 Select * from Products  p left join [Order Details] od on p.ProductID = od.ProductID
 
--- Customer ve Orders tablosundaki ID'leri getir (eşleşenler)
+-- Customer ve Orders tablosundaki ID'leri getir (eÅŸleÅŸenler)
 Select * from Customers c inner join Orders o on c.CustomerID = o.CustomerID
 
--- Customers'ta olup Orders'ta olmayanları da getir
+-- Customers'ta olup Orders'ta olmayanlarÄ± da getir
 Select * from Customers c left join Orders o on c.CustomerID = o.CustomerID
 
--- sisteme kayıt olup, sipariş vermeyen kullanıcılar (solda olup sağda olmayanlar)
+-- sisteme kayÄ±t olup, sipariÅŸ vermeyen kullanÄ±cÄ±lar (solda olup saÄŸda olmayanlar)
 Select * from Customers c left join Orders o on c.CustomerID = o.CustomerID where o.CustomerID is null 
 
 
--- right join -> sağda olup solda olmayanlar
+-- right join -> saÄŸda olup solda olmayanlar
 
 -- ikiden fazla tabloyu join etmek
 Select * from Products p inner join [Order Details] od on p.ProductID = od.ProductID
